@@ -1,0 +1,19 @@
+{
+  "service": "ClientGate",
+  "port": LISTENPORT,
+  "logLevel": "INFO",
+  "etcd": ["ETCDADDR"],
+  "dbCfg": 
+  [
+        {
+            "name": "myRedis1",
+            "type": "redisSingle",
+            "addr": ["REDIS1ADDR"]
+        },
+        {
+            "name": "myRedis2",
+            "type": "redisCluster",
+            "addr": ["REDIS2ADDR"]
+        }
+  ]
+}
